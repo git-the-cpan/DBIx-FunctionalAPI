@@ -1,13 +1,13 @@
 package DBIx::FunctionalAPI;
 
-our $DATE = '2015-01-03'; # DATE
-our $VERSION = '0.06'; # VERSION
+our $DATE = '2015-08-17'; # DATE
+our $VERSION = '0.07'; # VERSION
 
 use 5.010001;
 use strict;
 use warnings;
 use experimental 'smartmatch';
-use Log::Any '$log';
+use Log::Any::IfLOG '$log';
 
 use List::MoreUtils qw(uniq);
 use Complete::Util qw(complete_array_elem);
@@ -172,7 +172,7 @@ DBIx::FunctionalAPI - Some functions to expose your database as an API
 
 =head1 VERSION
 
-This document describes version 0.06 of DBIx::FunctionalAPI (from Perl distribution DBIx-FunctionalAPI), released on 2015-01-03.
+This document describes version 0.07 of DBIx::FunctionalAPI (from Perl distribution DBIx-FunctionalAPI), released on 2015-08-17.
 
 =head1 SYNOPSIS
 
@@ -198,15 +198,15 @@ Arguments ('*' denotes required arguments):
 
 =item * B<dbh> => I<obj>
 
-Database handle.
+{en_US Database handle}.
 
 =item * B<detail> => I<bool>
 
-Whether to return detailed records instead of just items/strings.
+{en_US Whether to return detailed records instead of just items/strings}.
 
 =item * B<table>* => I<str>
 
-Table name.
+{en_US Table name}.
 
 =back
 
@@ -220,6 +220,7 @@ element (meta) is called result metadata and is optional, a hash
 that contains extra information.
 
 Return value:  (any)
+
 
 =head2 list_rows(%args) -> [status, msg, result, meta]
 
@@ -229,15 +230,15 @@ Arguments ('*' denotes required arguments):
 
 =item * B<dbh> => I<obj>
 
-Database handle.
+{en_US Database handle}.
 
 =item * B<detail> => I<bool>
 
-Whether to return detailed records instead of just items/strings.
+{en_US Whether to return detailed records instead of just items/strings}.
 
 =item * B<table>* => I<str>
 
-Table name.
+{en_US Table name}.
 
 =back
 
@@ -251,6 +252,7 @@ element (meta) is called result metadata and is optional, a hash
 that contains extra information.
 
 Return value:  (any)
+
 
 =head2 list_tables(%args) -> [status, msg, result, meta]
 
@@ -260,7 +262,7 @@ Arguments ('*' denotes required arguments):
 
 =item * B<dbh> => I<obj>
 
-Database handle.
+{en_US Database handle}.
 
 =back
 
@@ -274,6 +276,7 @@ element (meta) is called result metadata and is optional, a hash
 that contains extra information.
 
 Return value:  (any)
+
 =for Pod::Coverage ^()$
 
 =head1 SEE ALSO
