@@ -21,7 +21,6 @@ my %WriteMakefileArgs = (
     "Complete::Util" => "0.12",
     "List::MoreUtils" => 0,
     "Log::Any::IfLOG" => 0,
-    "Rinci" => "1.1.50",
     "experimental" => 0
   },
   "TEST_REQUIRES" => {
@@ -30,7 +29,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.07",
+  "VERSION" => "0.08",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -45,7 +44,6 @@ my %FallbackPrereqs = (
   "IPC::Open3" => 0,
   "List::MoreUtils" => 0,
   "Log::Any::IfLOG" => 0,
-  "Rinci" => "1.1.50",
   "Test::More" => 0,
   "experimental" => 0
 );

@@ -1,7 +1,7 @@
 package DBIx::FunctionalAPI;
 
-our $DATE = '2015-08-17'; # DATE
-our $VERSION = '0.07'; # VERSION
+our $DATE = '2015-09-03'; # DATE
+our $VERSION = '0.08'; # VERSION
 
 use 5.010001;
 use strict;
@@ -172,7 +172,7 @@ DBIx::FunctionalAPI - Some functions to expose your database as an API
 
 =head1 VERSION
 
-This document describes version 0.07 of DBIx::FunctionalAPI (from Perl distribution DBIx-FunctionalAPI), released on 2015-08-17.
+This document describes version 0.08 of DBIx::FunctionalAPI (from Perl distribution DBIx-FunctionalAPI), released on 2015-09-03.
 
 =head1 SYNOPSIS
 
@@ -198,15 +198,15 @@ Arguments ('*' denotes required arguments):
 
 =item * B<dbh> => I<obj>
 
-{en_US Database handle}.
+Database handle.
 
 =item * B<detail> => I<bool>
 
-{en_US Whether to return detailed records instead of just items/strings}.
+Whether to return detailed records instead of just items/strings.
 
 =item * B<table>* => I<str>
 
-{en_US Table name}.
+Table name.
 
 =back
 
@@ -230,15 +230,15 @@ Arguments ('*' denotes required arguments):
 
 =item * B<dbh> => I<obj>
 
-{en_US Database handle}.
+Database handle.
 
 =item * B<detail> => I<bool>
 
-{en_US Whether to return detailed records instead of just items/strings}.
+Whether to return detailed records instead of just items/strings.
 
 =item * B<table>* => I<str>
 
-{en_US Table name}.
+Table name.
 
 =back
 
@@ -262,7 +262,7 @@ Arguments ('*' denotes required arguments):
 
 =item * B<dbh> => I<obj>
 
-{en_US Database handle}.
+Database handle.
 
 =back
 
@@ -287,7 +287,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/DBIx-Funct
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-DBIx-FunctionalAPI>.
+Source repository is at L<https://github.com/perlancar/perl-DBIx-FunctionalAPI>.
 
 =head1 BUGS
 
